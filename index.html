@@ -8,16 +8,18 @@
 </head>
 <body>
  <h1>Semana</h1>
- <h1>Verificar Dia da Semana</h1>
-    <label for="dia">Digite o dia da semana:</label>
+ <h1>Verifique o Dia da Semana</h1>
+    <label for="dia">Digite para verificar o dia semana o dia da semana:</label>
     <input type="text" id="dia">
     <button onclick="verificarDia()">Enter</button>
-    <p id="Resultado"></p>>
+    <p id="Resultado"></p>
 <script>
-function validar() {
-var tx = document.getElementById("txt")
-
-}
+  function verificarDia() {
+            var dia = document.getElementById('dia').value.toLowerCase();
+            var diasUteis = ['segunda', 'terça', 'quarta', 'quinta', 'sexta'];
+            var resultado = diasUteis.includes(dia) ? 'É um dia útil.' : 'Não é um dia útil.';
+            document.getElementById('resultado').innerText = resultado;
+        }
 else {
 
   }
