@@ -8,11 +8,11 @@
 </head>
 <body>
  <h1>Semana</h1>
-            <p>digite abaixo, qual dia da semana você deseja saber, se é dia ultil ou não </p
-            <input id="txt" type="text">←Digite aqui
-            <input type="button" value="enter" onclick="validar()">
-     <div id="resp">RESPOSTA</-
-     </div>
+ <h1>Verificar Dia da Semana</h1>
+    <label for="dia">Digite o dia da semana:</label>
+    <input type="text" id="dia">
+    <button onclick="verificarDia()">Enter</button>
+    <p id="Resultado"></p>>
 <script>
 function validar() {
 var tx = document.getElementById("txt")
